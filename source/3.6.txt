@@ -1,0 +1,19 @@
+//Aufgabe 3.6
+
+Container:
+
+->sequentiell: Klassen = Array, Vector, list, forward_list, deque
+Elemente sind nummeriert und augenscheinlich geordnet aufgelistet was nicht immer der Fall ist.
+
+->assoziativ: Klassen = unordered_map, unordered_multimap, map, multimap, multiset, set
+Elemente sind Keys zugeordnet. Man braucht zwei Informationen um Namen und Nummerzu erhalten.
+
+Speichern der Punkte eine Polygons: sequentiell als Vektor, da man auf zB zwei Punkte gleichzeitig zugreifen kann.
+
+Zuordnung von Farbnamen und entsprechenden RGB-Werten: Maps. Jeder Farbe wird eine RGB-Wert bis 255 zugeordnet.
+
+FIFO-Warteschlange: Deque: 
+Aufträge werden angehängt, bearbeitete entfernt. Hierbei wird Element 2 dann zu Element 1, anstatt alle vorzurutschen. Dementsprechend, würde Element 3 dann auch wieder 1 werden.
+
+
+
