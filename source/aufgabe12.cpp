@@ -18,16 +18,17 @@ Zum Suchen:
 int main ()
 {
   std::map<char,int> mymap;
-  std::map<char,int>::iterator it;
+  std::map<char,int>::iterator it;//Jedem Key ein Wert zuordnen und über deklarierten iterator finden.
 
   mymap['a']=50;
   mymap['b']=100;
   mymap['c']=150;
   mymap['d']=200;
 
-  it = mymap.find('b');//Jedem Key ein Wert zuordnen und über deklarierten iterator finden.
+  it = mymap.find('b');//Findet über Iterator "b", anschliessend it_b mit mymap.end verglichen(200), wenn ungleich, wird mymap it gelöscht.
   if (it != mymap.end())
     mymap.erase (it);
+
 
 Wann ist sie const?: Wenn der Wert, auf den sich der Key bezieht, nicht verändert, ist die Suche const.
 
